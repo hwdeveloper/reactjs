@@ -1,7 +1,8 @@
 import React from "react";
 import {render}from "react-dom";
+import App from "./App.js"
 
 render(
-    <h1>hello world! react</h1>,
+    <App></App>,
     document.getElementById("app-container")
 )
