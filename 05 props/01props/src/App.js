@@ -1,23 +1,27 @@
 import React from 'react'
 import TextView from "./TextView.js"
+import IconView from "./IconView.js"
 class App extends React.Component {
     constructor() {
         super();
         this.state = {
-            title:"你好"
+            textViewTitle:"textView",
+            age:5
         }
 
     }
 
-    change(){
-       this.setState({ title:"我很好！"})
+    setAge(age){
+        this.setState({age:age})
     }
+
+
     render() {
         return <div>
-            <h1>{this.state.title}</h1>
-
-            <TextView title={5}/>
-            <button onClick={(this.change).bind(this)}>点击按钮</button>
+            11
+            <TextView age={this.state.age} title={this.state.textViewTitle}/>
+            22
+            <IconView name="king" age={this.state.age} setAge={this.setAge}></IconView>
         </div>;
     }
 }
