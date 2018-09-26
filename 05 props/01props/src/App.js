@@ -18,7 +18,9 @@ class App extends React.Component {
 
     render() {
         return <div>
+            <h4 id='title'>Random number: {Math.random()}</h4>
             <h1>父组件的年龄：{this.state.age}</h1>
+            11
             <TextView age={this.state.age} title={this.state.textViewTitle}/>
             22
             <IconView name="king" age={this.state.age} setAge={(this.setAge).bind(this)}></IconView>

@@ -3,13 +3,13 @@ class TextView extends React.Component {
     constructor(props) {
         super();
         this.state={
-            age:props.age
+            myAge:props.age
         }
     }
 
     render() {
         return <div>
-            <h1>TextView的年龄 {this.state.age}</h1>
+            <h1>TextView的myAge年龄 {this.state.myAge}</h1>
             <h1>TextView的标题 {this.props.title}</h1>
         </div>;
 

@@ -5,7 +5,7 @@ class App extends React.Component {
         super();
         this.state = {
             textViewTitle:"textView",
-            isShow:false
+            isShow:true
         }
 
     }

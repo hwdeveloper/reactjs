@@ -3,7 +3,6 @@ class App extends React.Component {
     constructor() {
         super();
     }
-
     say(){
         console.error('这里错误了!');
     }

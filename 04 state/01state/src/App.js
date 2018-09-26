@@ -5,7 +5,6 @@ class App extends React.Component {
         this.state = {
             title:"你好"
         }
-
     }
 
     change(){
