@@ -14,6 +14,7 @@ class App extends React.Component {
         this.setState({title:title})
 
         var title = document.getElementById('title');
+
         ReactDOM.findDOMNode(title).style.color = 'red';
         this.forceUpdate();
     }
